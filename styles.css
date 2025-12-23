@@ -1,12 +1,12 @@
 body{
-    background-color: black;
+    background-color: rgb(0, 25, 78);
     display: grid;
     grid-template-columns: 300px 1fr;
 }
 
 .dashboard{
     display: grid;
-    background-color: black;
+    background-color: rgb(0, 0, 0);
     width: 300px;
     height: 100vh;
     grid-template-rows: 100px 300px 100px;
@@ -36,9 +36,11 @@ a:hover{
 
 .header{
     display: grid;
-    grid-template-columns: 70px 950px 100px 50px; 
-    grid-template-rows: 40px 100px;
+    background-color: purple;
+    grid-template-columns: 70px 800px auto; 
+    grid-template-rows: 40px 20px 50px;
     padding: 30px;
+    box-sizing: border-box;
 }
 
 .header label{
@@ -46,16 +48,23 @@ a:hover{
     justify-content: center;
     align-items: center;
     font-size: 20px;
-    color:coral;
+    color:rgb(255, 255, 255);
     grid-column: 1 / 2;
 }
 
 #search{
     width: 50%;
     padding: 5px;
-    border-radius: 10px;
+    border-radius: 30px;
     grid-column: 2/3;
     grid-row: 1/2;
+}
+
+.top_right{
+    grid-row: 1/2;
+    grid-column: 3/4;
+    display: grid;
+    grid-template-columns: auto auto;
 }
 
 .notification{
@@ -63,8 +72,7 @@ a:hover{
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
-    grid-column: 3/4;
-    grid-row: 1/2;
+    grid-column: 4/5;
 }
 
 .logo_link{
@@ -72,6 +80,45 @@ a:hover{
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
-    grid-column: 4/5;
-    grid-row: 1/2;
+    grid-column: 5/6;
+}
+
+.logo2{
+    background-image: url(logo.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    grid-row: 3/4;
+    grid-column: 1/2;
+}
+
+.name{
+    display: flex;
+    padding: 10px;
+    justify-content: center;
+    text-align: center;
+    margin-right: auto;
+    color: aliceblue;
+    font-size: 20px;
+    grid-row: 3/4;
+    grid-column: 2/3;
+}
+
+.bottom_right{
+    grid-row: 3/4;
+    grid-column: 3/4;
+    grid-template-columns: repeat(3, auto);; 
+    display: grid;
+    gap: 20px;
+    justify-content: end; 
+    align-items: center;
+}
+
+.btn{
+    height: 50px;
+    width: max-content;
+    background-color: rgb(5, 17, 99);
+    color: white;
+    border-radius: 20px;
+    padding: 0px 20px;
 }
