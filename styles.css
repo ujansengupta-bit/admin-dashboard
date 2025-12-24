@@ -8,7 +8,7 @@ body{
     display: grid;
     background-color: rgb(0, 0, 0);
     width: 300px;
-    height: 100vh;
+    height: 100%;
     grid-template-rows: 100px 300px 100px;
 }
 
@@ -121,4 +121,120 @@ a:hover{
     color: white;
     border-radius: 20px;
     padding: 0px 20px;
+}
+
+.y_project{
+    display: flex;
+    padding: 20px;
+    font-size: 20px;
+    color: rgb(0, 195, 255);
+}
+
+.project{
+    display: grid;
+    grid-template-columns: 400px 400px;
+    grid-template-rows: repeat(6, auto);
+    padding: 20px;
+    gap: 50px;
+}
+.link_container{
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+}
+.logo_link1{
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background-image: url(eye.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.logo_link2{
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background-image: url(github.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.p1, .p2, .p3, .p4, .p5, .p6{
+    color:rgb(0, 0, 0);
+    padding: 10px;
+    background-color: blueviolet;
+    border: 10px solid blueviolet;
+    border-left-color: deeppink;
+    border-radius: 10px;
+}
+
+.info1, .info2, .info3, .info4, .info5, .info6{
+    color:white;
+    padding: 20px;
+}
+
+.main{
+    display: flex;
+}
+
+.anbox{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto;
+    background-color: blueviolet;
+    backdrop-filter: blur(100px);
+    border-radius: 20px;
+}
+.announcement{
+    color: rgb(0, 195, 255);
+    padding: 20px;
+    font-size: 20px;
+}
+.topic1, .topic2, .topic3{
+    color: rgb(0, 0, 0);
+    border-bottom: 2px solid white;
+    padding: 15px 10px;
+}
+
+.topic3{
+    border-bottom: none;
+}
+.anbox{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto;
+    gap: 5px;
+}
+
+.description{
+    color: white;
+    padding: 10px;
+}
+
+.trending{
+    color: rgb(0, 195, 255);
+    padding: 20px;
+    font-size: 20px;
+}
+
+.trebox{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto;
+    background-color: blueviolet;
+    backdrop-filter: blur(100px);
+    border-radius: 20px;
+    gap:5px;
+}
+
+.pfp{
+    width: 25px;
+    height: 25px;
+}
+
+.profile{
+    display: flex;
+    flex-direction: column;
+    color: white;
+    padding: 20px;
 }
